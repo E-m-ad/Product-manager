@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة العمدة</title>
+    <!-- main file stylesheet -->
+    <link rel="stylesheet" href="file.css/file.css">
+    <!-- font awsome library  -->
+    <link rel="stylesheet" href="file.css/all.css">
+    <!-- googel fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <header>
+            <div class="container">
+                <div class="logo">مكتبة العمدة</div>
+                <input onfocus="search(this.value)" onkeyup="search(this.value)" id="search" type="search"
+                    placeholder="بحث..">
+
+            </div>
+        </header>
+        <div id="products">
+            <h1>المنتجات</h1>
+            <input id="nameOfProduct" placeholder="اسم المنتج" type="text">
+            <div class="price">
+                <input onchange="getTotal()" onkeyup="getTotal()" id="originalPrice" placeholder="االسعر" type="number">
+                <input onchange="getTotal()" onkeyup="getTotal()" id="sellPrice" placeholder="سعر البيع" type="number">
+                <input onchange="getTotal()" onkeyup="getTotal()" id="discount" placeholder="تخفيض " type="number">
+                <div class="total">صافى الربح : <span class="totalprice"></span></div>
+            </div>
+
+            <input id="count" placeholder="العدد" type="number">
+
+            <input id="Gender" placeholder="النوع" type="text">
+            <button id="CreateElement"> اضافة العنصر</button>
+            <br>
+            <div id="DeleteButton"></div>
+            <table width="100%">
+                <th>
+                    <tr>
+                        <td>رقم</td>
+                        <td>اسم المنتج</td>
+                        <td>السعر</td>
+                        <td>سعر البيع</td>
+                        <td>تخفيض</td>
+                        <td>النوع</td>
+                        <td>العدد</td>
+                        <td>صافى الربح</td>
+                        <td>مجموع أرباح المنتج</td>
+                        <td>حذف</td>
+                        <td>تعديل</td>
+                        <td>اضافة</td>
+                    </tr>
+                </th>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="neededproducts">
+            <h1>النواقص</h1>
+            <input id="nameOfNeeded" type="text" placeholder="اسم المنتج الناقص">
+            <input id="numberOfNeeded" type="number " placeholder="العدد">
+            <button id="neededproductsButtons"> اضافة العنصر</button>
+            <table width="100%">
+                <th>
+                    <tr>
+                        <td>رقم</td>
+                        <td>اسم المنتج</td>
+                        <td>العدد</td>
+                        <td>حذف</td>
+                    </tr>
+                </th>
+                <tbody id="tbody2">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="dist/file.js"></script>
+
+</body>
+
+</html>
