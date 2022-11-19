@@ -28,7 +28,7 @@ header {
 }
 header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   color: white;
@@ -148,13 +148,13 @@ button:hover {
 }
 #search {
   flex: 1;
-  margin: 0 10px;
   background-color: white;
   color: #111;
   padding: 0 5px;
   caret-color: black;
   display: block;
   transition: 0.3s;
+  height: 40px;
 }
 
 h1 {
